@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung – Equity Cove</title>
+  <style>
+    :root {
+      --teal: #1D9E75;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --bg: #111827;
+        --border: #374151;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      background: var(--teal);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    header h1 { font-size: 1.25rem; font-weight: 600; }
+    header p { font-size: 0.875rem; color: var(--muted); }
+    .lang-switch {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+    }
+    .lang-switch button {
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: none;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .lang-switch button.active {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal);
+    }
+    .lang { display: none; }
+    .lang.active { display: block; }
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 2rem 0 0.5rem;
+      color: var(--teal);
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.25rem;
+    }
+    p { margin-bottom: 0.75rem; }
+    ul { margin: 0.5rem 0 0.75rem 1.5rem; }
+    li { margin-bottom: 0.25rem; }
+    strong { font-weight: 600; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">EC</div>
+      <div>
+        <h1>Equity Cove</h1>
+        <p>Datenschutzerklärung / Privacy Policy</p>
+      </div>
+      <div class="lang-switch">
+        <button class="active" onclick="setLang('de')">DE</button>
+        <button onclick="setLang('en')">EN</button>
+      </div>
+    </header>
+
+    <!-- DEUTSCH -->
+    <div class="lang active" id="lang-de">
+      <p><strong>Letzte Aktualisierung:</strong> 6. Juni 2026</p>
+
+      <h2>1. Verantwortlicher</h2>
+      <p>Kevin Kerker<br>E-Mail: <a href="mailto:kevin@kerker.dev">kevin@kerker.dev</a></p>
+
+      <h2>2. Grundsatz: Keine Datenerhebung</h2>
+      <p>Equity Cove erhebt, speichert und verarbeitet <strong>keine</strong> personenbezogenen Daten auf unseren Servern. Wir betreiben keinen eigenen Backend-Server.</p>
+
+      <h2>3. Lokale Datenspeicherung</h2>
+      <p>Alle von dir erfassten Finanzdaten (Transaktionen, Konten, Budgets, Kategorien, Anhänge) werden ausschließlich <strong>lokal auf deinem Gerät</strong> gespeichert, verschlüsselt mit AES-256-GCM. Der Verschlüsselungsschlüssel wird aus deiner Passphrase abgeleitet (PBKDF2, 210.000 Iterationen) und verlässt dein Gerät niemals.</p>
+
+      <h2>4. Optionale Synchronisierung</h2>
+      <p>Die Sync-Funktion ist vollständig optional. Wenn du sie aktivierst, überträgst du deine verschlüsselten Daten an einen <strong>von dir selbst gewählten und betriebenen</strong> WebDAV-Server (z. B. Nextcloud, ownCloud). Wir haben keinen Zugriff auf diesen Server und keinen Zugriff auf deine Daten. Für die Datenschutzerklärung des von dir gewählten Anbieters bist du selbst verantwortlich.</p>
+
+      <h2>5. Keine Drittanbieter / Keine Telemetrie</h2>
+      <p>Die App enthält:</p>
+      <ul>
+        <li>Keine Werbung</li>
+        <li>Keine Analyse- oder Tracking-Bibliotheken (kein Firebase, kein Crashlytics, kein Sentry)</li>
+        <li>Keine Social-Media-Plugins</li>
+        <li>Keine Verbindung zu Drittanbieter-Diensten</li>
+      </ul>
+
+      <h2>6. Kamera- und Speicherzugriff</h2>
+      <p>Die App kann optional auf die Kamera und den Gerätespeicher zugreifen, um Belegfotos als Anhänge zu speichern. Diese Dateien werden lokal verschlüsselt gespeichert und nicht übertragen, es sei denn, du hast die Sync-Funktion aktiviert.</p>
+
+      <h2>7. Deine Rechte</h2>
+      <p>Da wir keine personenbezogenen Daten erheben, gibt es nichts, was wir auskunfts-, berichtigungs- oder löschpflichtig halten. Alle deine Daten liegen ausschließlich unter deiner Kontrolle.</p>
+
+      <h2>8. Änderungen</h2>
+      <p>Änderungen dieser Datenschutzerklärung werden auf dieser Seite veröffentlicht.</p>
+
+      <h2>9. Kontakt</h2>
+      <p>Bei Fragen: <a href="mailto:kevin@kerker.dev">kevin@kerker.dev</a></p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang" id="lang-en">
+      <p><strong>Last updated:</strong> June 6, 2026</p>
+
+      <h2>1. Controller</h2>
+      <p>Kevin Kerker<br>Email: <a href="mailto:kevin@kerker.dev">kevin@kerker.dev</a></p>
+
+      <h2>2. Principle: No data collection</h2>
+      <p>Equity Cove does <strong>not</strong> collect, store, or process any personal data on our servers. We do not operate a backend server.</p>
+
+      <h2>3. Local data storage</h2>
+      <p>All financial data you enter (transactions, accounts, budgets, categories, attachments) is stored exclusively <strong>locally on your device</strong>, encrypted with AES-256-GCM. The encryption key is derived from your passphrase (PBKDF2, 210,000 iterations) and never leaves your device.</p>
+
+      <h2>4. Optional sync</h2>
+      <p>The sync feature is entirely optional. When enabled, your encrypted data is transmitted to a <strong>WebDAV server of your own choosing and operation</strong> (e.g. Nextcloud, ownCloud). We have no access to that server or your data. You are responsible for reviewing the privacy policy of your chosen provider.</p>
+
+      <h2>5. No third parties / No telemetry</h2>
+      <p>The app contains:</p>
+      <ul>
+        <li>No advertising</li>
+        <li>No analytics or tracking libraries (no Firebase, no Crashlytics, no Sentry)</li>
+        <li>No social media plugins</li>
+        <li>No connections to third-party services</li>
+      </ul>
+
+      <h2>6. Camera and storage access</h2>
+      <p>The app may optionally access the camera and device storage to save receipt photos as attachments. These files are stored locally in encrypted form and are not transmitted unless you have enabled the sync feature.</p>
+
+      <h2>7. Your rights</h2>
+      <p>Since we do not collect any personal data, there is nothing for us to provide access to, correct, or delete. All your data is exclusively under your control.</p>
+
+      <h2>8. Changes</h2>
+      <p>Changes to this privacy policy will be published on this page.</p>
+
+      <h2>9. Contact</h2>
+      <p>Questions: <a href="mailto:kevin@kerker.dev">kevin@kerker.dev</a></p>
+    </div>
+
+    <footer>
+      <p>Equity Cove &copy; 2026 Kevin Kerker &middot; <a href="mailto:kevin@kerker.dev">kevin@kerker.dev</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'))
+      document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'))
+      document.getElementById('lang-' + lang).classList.add('active')
+      event.target.classList.add('active')
+    }
+  </script>
+</body>
+</html>
